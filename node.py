@@ -81,6 +81,7 @@ class Node:
 				if (linie.line[0] != 0 && trim == 0):
 					trim = trim + 1
 					msg = Message(3, self.node_id)
+					l = []
 					for j in range (self.node_id, self.matrix_size):
 						l[j-node_id] = self.datastore.get_A(self, j)
 					msg.add_line(l)
